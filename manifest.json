@@ -1,0 +1,19 @@
+{
+  "description": "Visor automatic accent color picker theme",
+  "homepage_url": "https://falldeaf.com",
+  "manifest_version": 2,
+  "name": "Visor Accent Color",
+  "permissions": [
+    "alarms",
+    "theme"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "55.0a2"
+    }
+  }
+}
