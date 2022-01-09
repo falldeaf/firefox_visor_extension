@@ -20,7 +20,7 @@ async function setTheme(theme) {
 	const response = await fetch('https://falldeaf.xyz/getsetting/HVaMfGkqxUUx7JMQ5QK5uQ2RrXxN4fLxwLwbwCzd/primary_color');
 	const color_json = await response.json();
 
-	let accent_color = color_json.hex;
+	let accent_color = color_json.value;
 
 	dyn_theme.colors.toolbar = getNewBrightnessColor("#" + accent_color, 25);
 	dyn_theme.colors.icons = '#FFF';
