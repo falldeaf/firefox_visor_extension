@@ -10,6 +10,12 @@
   "background": {
     "scripts": ["background.js"]
   },
+  "content_scripts": [
+    {
+      "matches": ["*://*.grubhub.com/*", "*://*.gopuff.com/*"],
+      "js": ["sendprogress.js"]
+    }
+  ],
   "version": "1.0",
   "browser_specific_settings": {
     "gecko": {
